@@ -1,0 +1,62 @@
+#https://blogs.technet.microsoft.com/nathangau/2017/05/19/security-monitoring-management-pack-summary/
+#https://blogs.technet.microsoft.com/jepayne/2017/12/08/weffles/
+
+#ADAudit-LocalAudit
+
+1102	#	The audit log was cleared 
+4624	#	An account was successfully logged on "logon type 4": This type of logon leaves credentials exposed in the LSA.
+4625	#	An account failed to log on
+4648	#	A logon was attempted using explicit credentials
+4672	#	Special privileges assigned to new logon 
+4720	#	A user account was created
+4724	#	An attempt was made to reset an accounts password
+4725	#	A user account was disabled 
+4726	#	A user account was deleted
+4731	#	A security-enabled local group was created 
+4732	#	A member was added to a security-enabled local group
+4733	#	A member was removed from a security-enabled local group
+4734	#	A security-enabled local group was deleted
+4735	#	A security-enabled local group was changed
+4738	#	A user account was changed
+4740	#	A user account was locked out
+4769	#	A Kerberos service ticket was requested
+4781	#	The name of an account was changed
+4964	#	Special groups have been assigned to a new logon 
+
+#System
+
+7045	#	A service was installed in the system
+
+#Black-Hills InfoSec Recommendations - duplicates removed because in ADaudit
+
+#Security
+
+4634	#	Logoff
+4662	#	An operation was performed on an object
+4673	#	A privileged service was called (NOISY)
+4688	#	A new process has been created (NOISY)
+4771	#	Kerberos pre-authentication failed
+5140	#	A network share object was accessed
+	
+5152	#	The Windows Filtering Platform blocked a packet - noisy
+5154	#	The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections noisy
+5156	#	The Windows Filtering Platform has allowed a connection noisy
+5157	#	The Windows Filtering Platform has blocked a connection noisy
+	
+4698	#	A scheduled task was created
+4702	#	A scheduled task was updated
+
+#Microsoft-Windows-TaskScheduler/Operational
+
+200		#	ScheduledTaskExecuted	 
+106		#	ScheduledTaskRegistered	
+
+# Not Covered - implement it yourself
+#Applocker - Microsoft-Windows-AppLocker - https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker
+
+8003	# 	-FileName- was allowed to run but would have been prevented from running if the AppLocker policy were enforced - from Applocker
+
+# SysMon
+1
+4
+516

@@ -1,0 +1,4 @@
+The audit log was cleared
+An account was successfully logged on
+An account failed to log on
+A logon was attempted using explicit credentials

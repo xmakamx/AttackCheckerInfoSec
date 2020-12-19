@@ -1,0 +1,9 @@
+bloodhound
+mimikatz
+compmgmt.msc
+whoami
+IEX
+Add-ADGroupMember
+Set-ADUser
+git clone
+Invoke-WebRequest
